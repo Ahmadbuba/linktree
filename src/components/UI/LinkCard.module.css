@@ -1,0 +1,15 @@
+.link__item {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  width: 80rem;
+  max-width: 90%;
+  background-color: bisque;
+  max-height: 8rem;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin: 2rem auto;
+  color: black;
+}
