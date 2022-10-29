@@ -20,13 +20,11 @@ const Profile = (props) => {
         <img
           src={arrowIcon}
           className={classes.arrowIcon}
-          alt="Share Icon arrow"
           height="20"
           width="25"
         />
         <img
           src={dotsIcon}
-          alt="Share Icon dots"
           className={classes.dotsIcon}
           height="35"
           width="40"
@@ -34,11 +32,7 @@ const Profile = (props) => {
       </div>
       <div className={classes.pic}>
         <div className={classes.backdrop}></div>
-        <img
-          src={cameraIcon}
-          alt="Camera Icon"
-          className={classes.arrow__img}
-        />
+        <img src={cameraIcon} className={classes.arrow__img} />
       </div>
 
       <h1 className={classes.myName}>Ahmad Buba</h1>
