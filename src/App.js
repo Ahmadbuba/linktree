@@ -25,6 +25,7 @@ function App() {
           className={classes.logo__image}
         />
       </div>
+      <div className={classes.line}></div>
       <div className={classes.footer__div}>
         <span className={classes.title__internship}>
           Zuri <div className={classes.title_internship_circle}></div>

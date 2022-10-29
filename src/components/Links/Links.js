@@ -10,31 +10,32 @@ const Links = () => {
       id: "btn__zuri",
       link: "https://training.zuri.team/",
       text: "Zuri Team",
-      subtext: "Just a description",
+      subtext: "",
     },
     {
       id: "books",
       link: "http://books.zuri.team",
       text: "Zuri Books",
-      subtext: "Just a description",
+      subtext: "Grab cool books for design and coding",
     },
     {
       id: "book__python",
       link: `https://books.zuri.team/python-for-beginners?ref_id=${slackDisplayname}`,
-      text: "Python Books",
-      subtext: "Just a description",
+      text: "Python Book",
+      subtext:
+        "Kick Start your journey in the most popular programming language today",
     },
     {
       id: "pitch",
       link: "https://background.zuri.team",
-      text: "Background Check For Coders",
-      subtext: "Just a description",
+      text: "Next-Gen Coders",
+      subtext: "We train and mentor the next Gen of Coders!",
     },
     {
       id: "book__design",
       link: "https://books.zuri.team/design-rules",
-      text: "Design Books",
-      subtext: "Just a description",
+      text: "Design Book",
+      subtext: "Hurry to grab your free Design book offerd by Zuri",
     },
   ];
   return (

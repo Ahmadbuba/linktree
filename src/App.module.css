@@ -17,30 +17,45 @@
   justify-content: space-between;
   align-items: center;
   gap: 4px;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .title_internship_circle {
-  padding: 0.2rem;
+  padding: 0.3rem;
   background-color: red;
   border-radius: 50%;
 }
 
-@media screen and (max-width: 500px) {
+.title_subtext {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #eaecf0;
+}
+
+@media screen and (max-width: 700px) {
   .footer__div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
     align-items: flex-start;
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   .footer__div {
     width: 80vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8rem auto;
+    margin: 3rem auto;
   }
 }

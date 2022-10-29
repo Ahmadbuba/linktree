@@ -62,6 +62,12 @@
   padding: 8px 0;
 }
 
+.myName {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 3rem 0;
+}
+
 @media screen and (max-width: 600px) {
   .arrowIcon {
     display: none;

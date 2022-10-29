@@ -8,7 +8,7 @@ import dotsIcon from "../../assests/Contentt.png";
 
 const Profile = () => {
   const profileSection = {
-    profile__img: "",
+    profile__img: profilePic,
     twitter: "https://twitter.com/emirbuba_2",
     slack: "Ahmad Buba",
     text: "Twitter Link",
@@ -40,6 +40,9 @@ const Profile = () => {
           className={classes.arrow__img}
         />
       </div>
+
+      <h1 className={classes.myName}>{profileSection.slack}</h1>
+
       <LinkCard
         link={profileSection.twitter}
         text={profileSection.text}
