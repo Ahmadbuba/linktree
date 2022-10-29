@@ -2,14 +2,20 @@
   text-decoration: none;
   list-style: none;
   display: block;
+  font-size: 12px;
   width: 80rem;
   max-width: 90%;
-  background-color: bisque;
-  max-height: 8rem;
+  padding: 1rem 0.5rem;
+  background-color: #eaecf0;
+  height: 16vh;
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   color: black;
+}
+
+.link__item:hover {
+  background-color: #d0d5dd;
 }

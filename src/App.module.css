@@ -1,0 +1,46 @@
+.logo__div {
+  max-width: 30%;
+  width: 24rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo__image {
+  object-fit: contain;
+}
+
+.title__internship {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+
+.title_internship_circle {
+  padding: 0.2rem;
+  background-color: red;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .footer__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .footer__div {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem auto;
+  }
+}

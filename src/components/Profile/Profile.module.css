@@ -1,45 +1,75 @@
 .arrow__link {
   position: relative;
   left: 75%;
-  top: 3rem;
+  top: 1.5rem;
   width: 2rem;
   max-width: 3rem;
   height: 2rem;
   max-height: 3rem;
-  background-color: aqua;
+  background-color: white;
   border-radius: 50%;
-  border: 1px dashed black;
+  border: 2px dashed #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pic {
+  position: relative;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-color: black;
-  margin: 1rem auto;
+  background-image: url("../../assests/profilePic.JPG");
+  background-size: cover;
+  margin: 2rem auto;
+}
+
+.backdrop {
+  display: none;
+}
+
+.pic:hover .backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #344054;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.pic img {
+  display: none;
+}
+
+.pic:hover img {
+  display: block;
+  position: absolute;
+  left: 38%;
+  bottom: 8%;
+  z-index: 10;
 }
 
 .center__alignment {
   text-align: center;
 }
+
 .center__alignment h1 {
   padding: 8px 0;
 }
 
-.img {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+@media screen and (max-width: 600px) {
+  .arrowIcon {
+    display: none;
+  }
 }
 
-.img:hover .backdrop {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  border-radius: 50%;
-  z-index: 10;
+@media screen and (min-width: 600px) {
+  .dotsIcon {
+    display: none;
+  }
 }

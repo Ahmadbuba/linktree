@@ -2,6 +2,9 @@ import React from "react";
 import LinkCard from "../UI/LinkCard";
 import classes from "./Profile.module.css";
 import profilePic from "../../assests/profilePic.JPG";
+import cameraIcon from "../../assests/Icon.png";
+import arrowIcon from "../../assests/Content.png";
+import dotsIcon from "../../assests/Contentt.png";
 
 const Profile = () => {
   const profileSection = {
@@ -13,10 +16,29 @@ const Profile = () => {
   let innertext = "";
   return (
     <React.Fragment>
-      <div className={classes.arrow__link}></div>
+      <div className={classes.arrow__link}>
+        <img
+          src={arrowIcon}
+          className={classes.arrowIcon}
+          alt="Share Icon arrow"
+          height="20"
+          width="25"
+        />
+        <img
+          src={dotsIcon}
+          alt="Share Icon dots"
+          className={classes.dotsIcon}
+          height="35"
+          width="40"
+        />
+      </div>
       <div className={classes.pic}>
-        <img src={profilePic} alt="Girl in a jacket" className={classes.img} />
         <div className={classes.backdrop}></div>
+        <img
+          src={cameraIcon}
+          alt="Camera Icon"
+          className={classes.arrow__img}
+        />
       </div>
       <LinkCard
         link={profileSection.twitter}
