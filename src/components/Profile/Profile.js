@@ -6,13 +6,13 @@ import cameraIcon from "../../assests/Icon.png";
 import arrowIcon from "../../assests/Content.png";
 import dotsIcon from "../../assests/Contentt.png";
 
-const Profile = () => {
+const Profile = (props) => {
   const profileSection = {
     profile__img: profilePic,
     twitter: "https://twitter.com/emirbuba_2",
-    slack: "Ahmad Buba",
-    text: "Twitter Link",
+    slack: props.slack,
   };
+  let text = "Twitter Link";
   let innertext = "";
   return (
     <React.Fragment>
@@ -41,14 +41,9 @@ const Profile = () => {
         />
       </div>
 
-      <h1 className={classes.myName}>{profileSection.slack}</h1>
+      <h1 className={classes.myName}>Ahmad Buba</h1>
 
-      <LinkCard
-        link={profileSection.twitter}
-        text={profileSection.text}
-        subtext={innertext}
-        className={classes.center__alignment}
-      />
+      <LinkCard link={profileSection.twitter} text={text} subtext={innertext} />
     </React.Fragment>
   );
 };

@@ -2,9 +2,7 @@ import React from "react";
 import classes from "./Links.module.css";
 import LinkCard from "../UI/LinkCard";
 
-const Links = () => {
-  const slackDisplayname = "Ahmad";
-
+const Links = (props) => {
   const linksSection = [
     {
       id: "btn__zuri",
@@ -20,7 +18,7 @@ const Links = () => {
     },
     {
       id: "book__python",
-      link: `https://books.zuri.team/python-for-beginners?ref_id=${slackDisplayname}`,
+      link: `https://books.zuri.team/python-for-beginners?ref_id=${props.slackUsername}`,
       text: "Python Book",
       subtext:
         "Kick Start your journey in the most popular programming language today",
@@ -46,7 +44,6 @@ const Links = () => {
           link={linkSection.link}
           text={linkSection.text}
           subtext={linkSection.subtext}
-          className={classes.center__alignment}
         />
       ))}
     </React.Fragment>

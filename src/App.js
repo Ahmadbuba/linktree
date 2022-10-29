@@ -7,10 +7,11 @@ import slackIcon from "../src/assests/slack.png";
 import logoIcon from "../src/assests/I4G.png";
 
 function App() {
+  const slackUsername = "ahmadBuba";
   return (
     <React.Fragment>
-      <Profile />
-      <Links />
+      <Profile slack={slackUsername} />
+      <Links slackUsername={slackUsername} />
       <div className={classes.logo__div}>
         <img
           src={slackIcon}
