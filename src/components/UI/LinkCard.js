@@ -10,7 +10,12 @@ import classes from "./LinkCard.module.css";
 
 const LinkCard = (props) => {
   return (
-    <a className={classes.link__item} href={props.link}>
+    <a
+      className={classes.link__item}
+      href={props.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <h1>{props.text}</h1>
       <p>{props.subtext}</p>
     </a>

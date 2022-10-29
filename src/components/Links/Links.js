@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Links.module.css";
+
 import LinkCard from "../UI/LinkCard";
 
 const Links = (props) => {

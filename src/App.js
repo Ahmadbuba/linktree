@@ -18,12 +18,14 @@ function App() {
           height="30"
           width="30"
           className={classes.logo__image}
+          alt="Slack Icon"
         />
         <img
           src={gitIcon}
           height="100"
           width="30"
           className={classes.logo__image}
+          alt="Git Icon"
         />
       </div>
       <div className={classes.line}></div>
@@ -42,6 +44,7 @@ function App() {
           height="100"
           width="100"
           className={classes.logo__image}
+          alt="Logo Icon"
         />
       </div>
     </React.Fragment>
