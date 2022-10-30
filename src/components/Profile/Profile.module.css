@@ -16,11 +16,11 @@
 
 .pic {
   position: relative;
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
-  background-image: url("../../assests/profilePic.JPG");
-  background-size: cover;
+  /* background-image: url("../../assests/profilePic.JPG");
+  background-size: cover; */
   margin: 2rem auto;
 }
 
@@ -43,6 +43,32 @@
 }
 
 .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.pic .camera_icon {
+  display: none;
+}
+
+.pic:hover .camera_icon {
+  position: absolute;
+  display: block;
+  left: 36%;
+  bottom: 10%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}
+
+.pic:hover .profile_pic {
+  filter: hue-rotate(35deg) invert(25%);
+}
+/* .pic img {
   display: none;
 }
 
@@ -52,13 +78,23 @@
   left: 38%;
   bottom: 8%;
   z-index: 10;
-}
+} */
 
 .myName {
   display: flex;
   justify-content: center;
-  padding: 2rem 0 3rem 0;
+  padding: 2rem 0 2.5rem 0;
   font-size: 1.5rem;
+}
+
+.slackName {
+  display: none;
+}
+
+.profile_pic {
+  position: relative;
+  display: block;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 600px) {

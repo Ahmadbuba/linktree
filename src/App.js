@@ -10,7 +10,7 @@ function App() {
   const slackUsername = "ahmadBuba";
   return (
     <React.Fragment>
-      <Profile slack={slackUsername} />
+      <Profile />
       <Links slackUsername={slackUsername} />
       <div className={classes.logo__div}>
         <img

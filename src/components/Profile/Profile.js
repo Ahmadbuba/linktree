@@ -1,16 +1,16 @@
 import React from "react";
-import LinkCard from "../UI/LinkCard";
+
 import classes from "./Profile.module.css";
 import profilePic from "../../assests/profilePic.JPG";
 import cameraIcon from "../../assests/Icon.png";
 import arrowIcon from "../../assests/Content.png";
 import dotsIcon from "../../assests/Contentt.png";
 
-const Profile = (props) => {
+const Profile = () => {
   const profileSection = {
     profile__img: profilePic,
     twitter: "https://twitter.com/emirbuba_2",
-    slack: props.slack,
+    slack: "ahmadBuba",
   };
   let text = "Twitter Link";
   let innertext = "";
@@ -33,17 +33,25 @@ const Profile = (props) => {
         />
       </div>
       <div className={classes.pic}>
-        <div className={classes.backdrop}></div>
+        <img
+          src={profilePic}
+          className={classes.profile_pic}
+          id="profile__img"
+        />
         <img
           src={cameraIcon}
-          className={classes.arrow__img}
-          alt="Camera Icon"
+          className={classes.camera_icon}
+          height="5"
+          width="5"
         />
       </div>
 
-      <h1 className={classes.myName}>Ahmad Buba</h1>
-
-      <LinkCard link={profileSection.twitter} text={text} subtext={innertext} />
+      <span className={classes.myName} id="twitter">
+        emirbuba_2
+      </span>
+      <span className={classes.slackName} id="slack">
+        {profileSection.slack}
+      </span>
     </React.Fragment>
   );
 };

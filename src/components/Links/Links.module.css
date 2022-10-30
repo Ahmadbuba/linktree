@@ -1,1 +1,27 @@
+.link__item {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  width: 80rem;
+  max-width: 90%;
+  padding: 1rem 0.5rem;
+  background-color: #eaecf0;
+  max-height: 9rem;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin: 1rem auto;
+  color: black;
+  text-align: center;
+}
 
+.link__item p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.link__item:hover {
+  background-color: #d0d5dd;
+}

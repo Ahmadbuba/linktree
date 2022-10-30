@@ -1,6 +1,5 @@
 import React from "react";
-
-import LinkCard from "../UI/LinkCard";
+import classes from "./Links.module.css";
 
 const Links = (props) => {
   const linksSection = [
@@ -38,14 +37,56 @@ const Links = (props) => {
   ];
   return (
     <React.Fragment>
-      {linksSection.map((linkSection) => (
-        <LinkCard
-          key={linkSection.id}
-          link={linkSection.link}
-          text={linkSection.text}
-          subtext={linkSection.subtext}
-        />
-      ))}
+      <a
+        className={classes.link__item}
+        href={linksSection[0].link}
+        target="_blank"
+        rel="noopener noreferrer"
+        id={linksSection[0].id}
+      >
+        <h1>{linksSection[0].text}</h1>
+        <p>{linksSection[0].subtext}</p>
+      </a>
+      <a
+        className={classes.link__item}
+        href={linksSection[1].link}
+        target="_blank"
+        rel="noopener noreferrer"
+        id={linksSection[1].id}
+      >
+        <h1>{linksSection[1].text}</h1>
+        <p>{linksSection[1].subtext}</p>
+      </a>
+      <a
+        className={classes.link__item}
+        href={linksSection[2].link}
+        target="_blank"
+        rel="noopener noreferrer"
+        id={linksSection[2].id}
+      >
+        <h1>{linksSection[2].text}</h1>
+        <p>{linksSection[2].subtext}</p>
+      </a>
+      <a
+        className={classes.link__item}
+        href={linksSection[3].link}
+        target="_blank"
+        rel="noopener noreferrer"
+        id={linksSection[3].id}
+      >
+        <h1>{linksSection[3].text}</h1>
+        <p>{linksSection[3].subtext}</p>
+      </a>
+      <a
+        className={classes.link__item}
+        href={linksSection[4].link}
+        target="_blank"
+        rel="noopener noreferrer"
+        id={linksSection[4].id}
+      >
+        <h1>{linksSection[4].text}</h1>
+        <p>{linksSection[4].subtext}</p>
+      </a>
     </React.Fragment>
   );
 };
