@@ -21,14 +21,14 @@ const Profile = () => {
           className={classes.arrowIcon}
           height="20"
           width="25"
-          alt="Arrow Icon"
+          alt="ArrowIcon"
         />
         <img
           src={dotsIcon}
           className={classes.dotsIcon}
           height="35"
           width="40"
-          alt="Dots Icon"
+          alt="DotsIcon"
         />
       </div>
       <div className={classes.pic}>
@@ -36,12 +36,14 @@ const Profile = () => {
           src={profilePic}
           className={classes.profile_pic}
           id="profile__img"
+          alt="profileimage"
         />
         <img
           src={cameraIcon}
           className={classes.camera_icon}
           height="5"
           width="5"
+          alt="cameraicon"
         />
       </div>
 
