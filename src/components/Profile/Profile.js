@@ -9,11 +9,10 @@ import dotsIcon from "../../assests/Contentt.png";
 const Profile = () => {
   const profileSection = {
     profile__img: profilePic,
-    twitter: "https://twitter.com/emirbuba_2",
+
     slack: "ahmadBuba",
   };
-  let text = "Twitter Link";
-  let innertext = "";
+
   return (
     <React.Fragment>
       <div className={classes.arrow__link}>

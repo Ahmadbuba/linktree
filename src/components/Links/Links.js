@@ -35,8 +35,19 @@ const Links = (props) => {
       subtext: "Hurry to grab your free Design book offerd by Zuri",
     },
   ];
+  const twitter = "https://twitter.com/emirbuba_2";
+  let text = "Twitter Link";
+
   return (
     <React.Fragment>
+      <a
+        className={classes.link__item}
+        href={twitter}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h1>{text}</h1>
+      </a>
       <a
         className={classes.link__item}
         href={linksSection[0].link}
