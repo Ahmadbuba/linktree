@@ -2,6 +2,8 @@ import React from "react";
 import classes from "./Links.module.css";
 
 const Links = (props) => {
+  const slackUsername = "ahmadBuba";
+
   const linksSection = [
     {
       id: "btn__zuri",
@@ -17,7 +19,7 @@ const Links = (props) => {
     },
     {
       id: "book__python",
-      link: `https://books.zuri.team/python-for-beginners?ref_id=${props.slackUsername}`,
+      link: `https://books.zuri.team/python-for-beginners?ref_id=${slackUsername}`,
       text: "Python Book",
       subtext:
         "Kick Start your journey in the most popular programming language today",
