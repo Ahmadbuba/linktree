@@ -1,0 +1,13 @@
+.logo__div {
+  max-width: 30%;
+  width: 24rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo__image {
+  object-fit: contain;
+}

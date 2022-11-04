@@ -1,0 +1,27 @@
+.arrow__link {
+  position: relative;
+  left: 75%;
+  top: 1.5rem;
+  width: 2rem;
+  max-width: 3rem;
+  height: 2rem;
+  max-height: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px dashed #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .arrowIcon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dotsIcon {
+    display: none;
+  }
+}

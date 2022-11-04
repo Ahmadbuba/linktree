@@ -1,17 +1,20 @@
 import classes from "./App.module.css";
 import React from "react";
-import Profile from "./components/Profile/Profile";
-import Links from "./components/Links/Links";
+import Profile from "./pages/components/Profile/Profile";
+import Links from "./pages/components/Links/Links";
 import gitIcon from "../src/assests/git_hub.png";
 import slackIcon from "../src/assests/slack.png";
 import logoIcon from "../src/assests/I4G.png";
+
+import Footer from "./pages/components/Footer/Footer";
+import ProfileIcons from "./pages/components/Footer/ProfileIcons";
 
 function App() {
   return (
     <React.Fragment>
       <Profile />
       <Links />
-      <div className={classes.logo__div}>
+      {/* <div className={classes.logo__div}>
         <img
           src={slackIcon}
           height="30"
@@ -26,9 +29,10 @@ function App() {
           className={classes.logo__image}
           alt="Git Icon"
         />
-      </div>
+      </div> */}
+      <ProfileIcons />
       <div className={classes.line}></div>
-      <div className={classes.footer__div}>
+      {/* <div className={classes.footer__div}>
         <span className={classes.title__internship}>
           Zuri <div className={classes.title_internship_circle}></div>
           Internship
@@ -45,7 +49,8 @@ function App() {
           className={classes.logo__image}
           alt="Logo Icon"
         />
-      </div>
+      </div> */}
+      <Footer />
     </React.Fragment>
   );
 }
