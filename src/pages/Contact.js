@@ -3,38 +3,31 @@ import classes from "./Contact.module.css";
 
 const Contact = () => {
   const [enteredFirstName, setEnteredFirstName] = useState("");
+  const [enteredFirstNameTouched, setEnteredFirstNameTouched] = useState(false);
   const [enteredLastName, setEnteredLastName] = useState("");
+  const [enteredLastNameTouched, setEnteredLastNameTouched] = useState(false);
   const [enteredMail, setEnteredMail] = useState("");
+  const [enteredMailTouched, setEnteredMailTouched] = useState(false);
   const [enteredMessage, setEnteredMessage] = useState("");
+  const [enteredMessageTouched, setEnteredMessageTouched] = useState(false);
   const [enteredCheckbox, setEnteredCheckbox] = useState(false);
+  const [enteredCheckboxTouched, setEnteredCheckboxTouched] = useState(false);
   const [enteredForm, setEnteredForm] = useState(false);
-  const [firstNameValid, setFirstNameValid] = useState(true);
-  const [lastNameValid, setLastNameValid] = useState(true);
-  const [mailValid, setMailValid] = useState(true);
-  const [messageValid, setMessageValid] = useState(true);
-  const [checkBoxValid, setcheckBoxValid] = useState(false);
 
   const firstNameChangeHandler = (event) => {
     setEnteredFirstName(event.target.value);
-    setFirstNameValid((prevValue) =>
-      enteredFirstName.trim().length > 0 ? true : false
-    );
   };
 
   // const firstNameValid = enteredFirstName.trim().length > 0 ? true : false;
 
   const lastNameChangeHandler = (event) => {
     setEnteredLastName(event.target.value);
-    setLastNameValid(enteredLastName.trim().length > 0 ? true : false);
   };
 
   // const lastNameValid = enteredLastName.trim().length > 0 ? true : false;
 
   const mailChangeHandler = (event) => {
     setEnteredMail(event.target.value);
-    setMailValid(
-      enteredMail.trim().length > 0 && enteredMail.includes("@") ? true : false
-    );
   };
 
   // const mailValid =
@@ -42,14 +35,12 @@ const Contact = () => {
 
   const messageChangeHandler = (event) => {
     setEnteredMessage(event.target.value);
-    setMessageValid(enteredMessage.trim().length > 0 ? true : false);
   };
 
   // const messageValid = enteredMessage.trim().length > 0 ? true : false;
 
   const checkBoxChangeHandler = (event) => {
     setEnteredCheckbox((prevValue) => !prevValue);
-    setcheckBoxValid((prevValue) => enteredCheckbox);
   };
 
   // const checkBoxValid = enteredCheckbox ? true : false;
@@ -57,35 +48,27 @@ const Contact = () => {
   const submitHandler = (event) => {
     event.preventDefault();
 
-    if (
-      firstNameValid &&
-      lastNameValid &&
-      mailValid &&
-      messageValid &&
-      checkBoxValid
-    ) {
-      const userData = {
-        first_name: enteredFirstName,
-        last_name: enteredLastName,
-        email: enteredMail,
-        message: enteredMessage,
-      };
+    const userData = {
+      first_name: enteredFirstName,
+      last_name: enteredLastName,
+      email: enteredMail,
+      message: enteredMessage,
+    };
 
-      console.log(userData.first_name);
+    console.log(userData.first_name);
 
-      setEnteredFirstName("");
-      setEnteredLastName("");
-      setEnteredMail("");
-      setEnteredMessage("");
-      setEnteredCheckbox(false);
-    }
+    setEnteredFirstName("");
+    setEnteredLastName("");
+    setEnteredMail("");
+    setEnteredMessage("");
+    setEnteredCheckbox(false);
   };
 
   return (
     <div className={classes.holder}>
       <h2>Contact Me</h2>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      <form>
+      <form onSubmit={submitHandler}>
         <div className={classes.flex_display}>
           <div className={classes.block_display_name}>
             <label htmlFor="first_name">First name</label>
@@ -98,7 +81,7 @@ const Contact = () => {
               onChange={firstNameChangeHandler}
             />
           </div>
-          {!firstNameValid && <p>This is error</p>}
+
           <div className={classes.block_display_name}>
             <label htmlFor="last_name">Last name</label>
             <input
@@ -110,7 +93,6 @@ const Contact = () => {
               onChange={lastNameChangeHandler}
             />
           </div>
-          {!lastNameValid && <p>This is error</p>}
         </div>
         <label htmlFor="email">Email</label>
         <input
@@ -122,7 +104,7 @@ const Contact = () => {
           onChange={mailChangeHandler}
           className={classes.block_display}
         />
-        {!mailValid && <p>This is error</p>}
+
         <label htmlFor="message">Message</label>
         <textarea
           type="textarea"
@@ -135,7 +117,7 @@ const Contact = () => {
           className={`${classes.block_display} ${classes.pad}`}
           // onClick={onFocusHandler}
         />
-        {!messageValid && <p>This is error</p>}
+
         <div>
           <input
             type="checkbox"
@@ -147,16 +129,10 @@ const Contact = () => {
           <label htmlFor="agreement">
             You agree to providing your data to Ahmad who may contact you.
           </label>
-          {!checkBoxValid && <p>This is error</p>}
         </div>
 
         <br></br>
-        <button
-          type="button"
-          className={classes.btn}
-          id="btn__submit"
-          onSubmit={submitHandler}
-        >
+        <button className={classes.btn} id="btn__submit">
           Send message
         </button>
       </form>
