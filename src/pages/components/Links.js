@@ -1,6 +1,5 @@
 import React from "react";
-import LinkCard from "../../UI/LinkCard";
-import classes from "./Links.module.css";
+import LinkCard from "../UI/LinkCard";
 
 const Links = (props) => {
   const slackUsername = "ahmadBuba";

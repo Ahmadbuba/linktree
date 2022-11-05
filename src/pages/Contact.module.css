@@ -5,34 +5,9 @@
   padding: 3rem 0;
 }
 
-.holder h2 {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  /* identical to box height, or 122% */
-
-  letter-spacing: -0.02em;
-
-  /* Gray/900 */
-
-  color: #101828;
-}
-
 .holder p {
   display: inline-block;
   width: 100%;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-
-  /* Gray/600 */
-
-  color: #475467;
 }
 
 .holder form {
@@ -162,9 +137,6 @@
 }
 
 .check {
-  border: 1px dashed #7b61ff;
-  border-radius: 5px;
-  padding: 16px;
 }
 
 .btn {
