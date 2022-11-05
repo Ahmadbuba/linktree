@@ -52,12 +52,12 @@ const Links = (props) => {
     },
   ];
   const twitter = "https://twitter.com/emirbuba_2";
-  let text = "Twitter Link";
 
   // const myLinks
 
   return (
     <React.Fragment>
+      <LinkCard key="1" id="1" link={twitter} text="Ahmad Buba" />
       {linksSection.map((linkItem) => {
         return (
           <LinkCard
