@@ -1,13 +1,7 @@
+import { useState } from "react";
 import classes from "./Contact.module.css";
 
 const Contact = () => {
-  const messageArea = document.getElementById("message");
-  const onFocusHandler = (event) => {
-    const end = messageArea.value.length;
-    messageArea.setSelectionRange(end, end);
-    messageArea.focus();
-  };
-
   return (
     <div className={classes.holder}>
       <h2>Contact Me</h2>
@@ -52,7 +46,7 @@ const Contact = () => {
           // onClick={onFocusHandler}
         />
         <div>
-          <input type="checkbox" name="agreement" />
+          <input type="checkbox" name="agreement" className={classes.check} />
           <label htmlFor="agreement">
             You agree to providing your data to Ahmad who may contact you.
           </label>

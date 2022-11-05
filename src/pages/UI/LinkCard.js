@@ -10,7 +10,7 @@ const LinkCard = (props) => {
       id={props.id}
       rel="noopener noreferrer"
     >
-      <h1>{props.text}</h1>
+      <h2>{props.text}</h2>
       <p>{props.subtext}</p>
     </a>
   );
@@ -18,7 +18,7 @@ const LinkCard = (props) => {
   if (props.type === "route") {
     anchorType = (
       <Link className={classes.link__item} to={props.link} id={props.id}>
-        <h1>{props.text}</h1>
+        <h2>{props.text}</h2>
         <p>{props.subtext}</p>
       </Link>
     );

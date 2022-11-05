@@ -5,9 +5,34 @@
   padding: 3rem 0;
 }
 
+.holder h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: -0.02em;
+
+  /* Gray/900 */
+
+  color: #101828;
+}
+
 .holder p {
   display: inline-block;
   width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  /* Gray/600 */
+
+  color: #475467;
 }
 
 .holder form {
@@ -16,23 +41,86 @@
 
 .holder form input {
   position: relative;
+  padding: 8px 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+}
+
+.holder form input:focus {
+  /* Base/White */
+
+  background: #ffffff;
+  /* Primary/300 */
+
+  border: 1px solid #84caff;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
 }
 
 .holder form input::placeholder {
   position: absolute;
   left: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Gray/600 */
+
+  color: #475467;
 }
 
 .holder form textarea {
-  resize: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
   font-family: sans-serif;
   position: relative;
+  padding: 8px 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  background: #ffffff;
+  /* Gray/300 */
+
+  border: 1px solid #d0d5dd;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.holder form textarea::-webkit-scrollbar {
+  display: none;
 }
 
 .holder form textarea::placeholder {
   position: absolute;
   left: 12px;
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
 }
 /* .holder form input {
   position: relative;
@@ -42,6 +130,15 @@
   position: absolute;
   top: 0;
 } */
+
+.holder form textarea:focus {
+  background: #ffffff;
+  /* Primary/300 */
+
+  border: 1px solid #84caff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+  border-radius: 8px;
+}
 
 .block_display {
   display: block;
@@ -64,8 +161,49 @@
   flex-direction: column;
 }
 
+.check {
+  border: 1px dashed #7b61ff;
+  border-radius: 5px;
+  padding: 16px;
+}
+
 .btn {
   display: block;
   width: 100%;
+  height: 48px;
   margin: 3rem auto;
+  padding: 12px 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Base/White */
+
+  color: #ffffff;
+  background: #1570ef;
+  /* Primary/600 */
+
+  border: 1px solid #1570ef;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #175cd3;
+  /* Primary/700 */
+
+  border: 1px solid #175cd3;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
 }
