@@ -4,6 +4,8 @@ import classes from "./Links.module.css";
 
 const Links = (props) => {
   const slackUsername = "ahmadBuba";
+  const defaultAnchor = "normal";
+  const routeAnchor = "route";
 
   const linksSection = [
     {
@@ -11,12 +13,14 @@ const Links = (props) => {
       link: "https://training.zuri.team/",
       text: "Zuri Team",
       subtext: "",
+      type: defaultAnchor,
     },
     {
       id: "books",
       link: "http://books.zuri.team",
       text: "Zuri Books",
       subtext: "Grab cool books for design and coding",
+      type: defaultAnchor,
     },
     {
       id: "book__python",
@@ -24,18 +28,28 @@ const Links = (props) => {
       text: "Python Book",
       subtext:
         "Kick Start your journey in the most popular programming language today",
+      type: defaultAnchor,
     },
     {
       id: "pitch",
       link: "https://background.zuri.team",
       text: "Next-Gen Coders",
       subtext: "We train and mentor the next Gen of Coders!",
+      type: defaultAnchor,
     },
     {
       id: "book__design",
       link: "https://books.zuri.team/design-rules",
       text: "Design Book",
       subtext: "Hurry to grab your free Design book offerd by Zuri",
+      type: defaultAnchor,
+    },
+    {
+      id: "contact",
+      link: "/contact",
+      text: "Contact Me",
+      subtext: "",
+      type: routeAnchor,
     },
   ];
   const twitter = "https://twitter.com/emirbuba_2";
@@ -53,6 +67,7 @@ const Links = (props) => {
             link={linkItem.link}
             text={linkItem.text}
             subtext={linkItem.subtext}
+            type={linkItem.type}
           />
         );
       })}

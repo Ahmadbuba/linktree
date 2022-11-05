@@ -1,0 +1,71 @@
+.holder {
+  width: 50rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.holder p {
+  display: inline-block;
+  width: 100%;
+}
+
+.holder form {
+  width: 100%;
+}
+
+.holder form input {
+  position: relative;
+}
+
+.holder form input::placeholder {
+  position: absolute;
+  left: 12px;
+}
+
+.holder form textarea {
+  resize: none;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.holder form textarea::placeholder {
+  position: absolute;
+  left: 12px;
+  font-family: sans-serif;
+}
+/* .holder form input {
+  position: relative;
+} */
+
+/* .holder form input::placeholder {
+  position: absolute;
+  top: 0;
+} */
+
+.block_display {
+  display: block;
+  width: 100%;
+}
+
+.pad {
+  height: 5rem;
+}
+
+.flex_display {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.block_display_name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 3rem auto;
+}

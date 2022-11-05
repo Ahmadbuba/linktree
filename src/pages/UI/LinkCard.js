@@ -15,7 +15,7 @@ const LinkCard = (props) => {
     </a>
   );
 
-  if (props.type) {
+  if (props.type === "route") {
     anchorType = (
       <Link className={classes.link__item} to={props.link} id={props.id}>
         <h1>{props.text}</h1>

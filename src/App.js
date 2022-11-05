@@ -8,13 +8,17 @@ import logoIcon from "../src/assests/I4G.png";
 
 import Footer from "./pages/components/Footer/Footer";
 import ProfileIcons from "./pages/components/Footer/ProfileIcons";
+import { Route, Switch } from "react-router-dom";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <React.Fragment>
-      <Profile />
-      <Links />
-      {/* <div className={classes.logo__div}>
+      <Switch>
+        <Route path="/" exact>
+          <Profile />
+          <Links />
+          {/* <div className={classes.logo__div}>
         <img
           src={slackIcon}
           height="30"
@@ -30,7 +34,13 @@ function App() {
           alt="Git Icon"
         />
       </div> */}
-      <ProfileIcons />
+          <ProfileIcons />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
       <div className={classes.line}></div>
       {/* <div className={classes.footer__div}>
         <span className={classes.title__internship}>
